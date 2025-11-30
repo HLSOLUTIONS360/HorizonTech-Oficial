@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizontech Oficial - Eletrônicos & Assistência</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="shortcut icon" href="img/favicon-horizontech.png" type="image/png">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <!-- Se tiver logo em PNG é só trocar pela imagem -->
+        <!-- <img src="img/logo-horizontech.png" alt="Horizontech Oficial"> -->
+        <span>Horizon<span>tech</span> Oficial</span>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#assistencia">Assistência</a></li>
+          <li><a href="#contato">Contato</a></li>]
+          <li>
+  <a href="https://www.tiktok.com/@horizontechoficial" 
+     target="_blank">
+     TikTok
+  </a>
+</li>
+
+        </ul>
+      </nav>
+
+      <button class="btn-menu" id="btn-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>
+          Tecnologia de ponta com atendimento <span>Horizontech Oficial</span>
+        </h1>
+        <p>
+          Smartphones, notebooks, periféricos gamer e assistência técnica especializada.
+          Tudo em um só lugar, com aquele atendimento que você já conhece do Instagram.
+        </p>
+
+ <div class="orcamento-box">
+  <h3>Peça um orçamento rápido</h3>
+
+  <input 
+    type="text" 
+    id="nomeCliente" 
+    placeholder="Seu nome completo" 
+  />
+
+  <input 
+    type="text" 
+    id="telefoneCliente" 
+    placeholder="Seu telefone (WhatsApp)" 
+  />
+
+  <textarea
+    id="mensagemOrcamento"
+    placeholder="Descreva o serviço desejado ou o produto que deseja comprar..."
+  ></textarea>
+
+  <button onclick="enviarOrcamento()" class="btn btn-primary">
+    Enviar pelo WhatsApp
+  </button>
+</div>
+
+</div>
+
+        <div class="hero-badges">
+          <span>📦 Entrega para toda região</span>
+          <span>🛠 Assistência especializada</span>
+          <span>💳 Parcelamos no cartão</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-card main">
+          <h3>Combo Smartphone + Acessórios</h3>
+          <p>Montamos o kit perfeito pra você sair pronto do básico ao avançado.</p>
+          <span class="price">a partir de R$ 1.299,90</span>
+        </div>
+
+        <div class="hero-card secondary">
+          <h4>Assistência Técnica</h4>
+          <p>Troca de tela, bateria, upgrade de SSD, limpeza e muito mais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES -->
+  <section class="features">
+    <div class="container">
+      <h2>Por que escolher a Horizontech Oficial?</h2>
+      <p class="section-subtitle">
+        Loja de confiança, atendimento humanizado e aquela curadoria de produtos que você vê nos stories.
+      </p>
+
+      <div class="grid-3">
+        <div class="feature-card">
+          <h3>Produtos Selecionados</h3>
+          <p>Trabalhamos com marcas e modelos que realmente valem o investimento.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Suporte Pós-venda</h3>
+          <p>Te ajudamos desde a escolha até a configuração final do seu equipamento.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Garantia & Segurança</h3>
+          <p>Garantia e nota fiscal, para você comprar com total tranquilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Produtos em Destaque</h2>
+          <p class="section-subtitle">
+            Alguns dos modelos que você pode encontrar na Horizontech Oficial.
+          </p>
+        </div>
+
+        <div class="product-filters">
+          <button class="filter-btn active" data-category="all">Todos</button>
+          <button class="filter-btn" data-category="smartphone">Smartphones</button>
+          <button class="filter-btn" data-category="notebook">Notebooks</button>
+          <button class="filter-btn" data-category="gamer">Linha Gamer</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <!-- Produto 1 -->
+        <article class="product-card" data-category="smartphone">
+          <div class="product-tag">Novo</div>
+          <h3>Smartphone Horizon X Pro</h3>
+          <p>128GB • 6GB RAM • Câmera tripla</p>
+          <span class="product-price">R$ 1.999,90</span>
+          <button class="btn btn-small btn-whats-card">
+            Consultar pelo WhatsApp
+          </button>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="product-card" data-category="smartphone">
+          <div class="product-tag">Oferta</div>
+          <h3>Smartphone Horizon Lite</h3>
+          <p>64GB • 4GB RAM • Bateria 5000mAh</p>
+          <span class="product-price old">R$ 1.299,90</span>
+          <span class="product-price">R$ 1.099,90</span>
+          <button class="btn btn-small btn-whats-card">
+            Garantir a oferta
+          </button>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="product-card" data-category="notebook">
+          <div class="product-tag">Trabalho/Estudos</div>
+          <h3>Notebook Horizon Work 15"</h3>
+          <p>SSD 480GB • 8GB RAM • Tela Full HD</p>
+          <span class="product-price">R$ 2.899,90</span>
+          <button class="btn btn-small btn-whats-card">
+            Quero mais detalhes
+          </button>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="product-card" data-category="gamer">
+          <div class="product-tag">Gamer</div>
+          <h3>Kit Gamer Horizon</h3>
+          <p>Headset, teclado mecânico, mouse e mousepad</p>
+          <span class="product-price">R$ 599,90</span>
+          <button class="btn btn-small btn-whats-card">
+            Ver disponibilidade
+          </button>
+        </article>
+
+        <!-- Produto 5 -->
+        <article class="product-card" data-category="gamer">
+          <div class="product-tag">Gamer</div>
+          <h3>Monitor 24" 144Hz</h3>
+          <p>Perfeito para quem busca fluidez nos jogos.</p>
+          <span class="product-price">R$ 1.499,90</span>
+          <button class="btn btn-small btn-whats-card">
+            Falar com especialista
+          </button>
+        </article>
+
+        <!-- Produto 6 -->
+        <article class="product-card" data-category="notebook">
+          <div class="product-tag">Upgrade</div>
+          <h3>Upgrade SSD & RAM</h3>
+          <p>Deixe seu notebook voando com nossos upgrades.</p>
+          <span class="product-price">Consulte</span>
+          <button class="btn btn-small btn-whats-card">
+            Pedir orçamento
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTAS ESPECIAIS -->
+  <section class="offers" id="ofertas">
+    <div class="container offers-content">
+      <div class="offers-text">
+        <h2>Ofertas especiais para seguidor do Instagram</h2>
+        <p>
+          Chegou pelo Instagram da Horizontech Oficial? Fala com a gente
+          no WhatsApp e pergunta pelas ofertas do mês. Sempre tem uma
+          condição diferenciada te esperando.
+        </p>
+
+        <ul class="offers-list">
+          <li>📱 Descontos em combos smartphone + capa + película</li>
+          <li>🧼 Limpeza completa grátis em compras acima de R$ 1.000,00</li>
+          <li>🎮 Condições especiais para linha gamer</li>
+        </ul>
+
+        <a href="https://wa.me/5599999999999?text=Quero%20saber%20as%20ofertas%20para%20seguidor%20do%20Instagram"
+           target="_blank"
+           class="btn btn-primary">
+          Ver ofertas no WhatsApp
+        </a>
+      </div>
+
+      <div class="offers-highlight">
+        <div class="offers-card">
+          <h3>Promo da Semana</h3>
+          <p>Escolha seu smartphone e ganhe acessórios com desconto exclusivo.</p>
+          <span>Válido enquanto durarem os estoques.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTÊNCIA TÉCNICA -->
+  <section class="assistencia" id="assistencia">
+    <div class="container">
+      <h2>Assistência Técnica Especializada</h2>
+      <p class="section-subtitle">
+        Cuidamos do seu equipamento como se fosse nosso.
+      </p>
+
+      <div class="assist-grid">
+        <div class="assist-card">
+          <h3>Serviços mais procurados</h3>
+          <ul>
+            <li>Troca de tela de smartphone</li>
+            <li>Troca de bateria</li>
+            <li>Formatação e otimização de notebooks</li>
+            <li>Instalação de SSD e upgrades</li>
+            <li>Limpeza interna completa</li>
+          </ul>
+        </div>
+
+        <div class="assist-steps">
+          <h3>Como funciona</h3>
+          <ol>
+            <li>Você chama no WhatsApp e explica o problema.</li>
+            <li>Fazemos uma análise e passamos um orçamento.</li>
+            <li>Após aprovação, realizamos o serviço com todo cuidado.</li>
+            <li>Você recebe seu aparelho pronto e com garantia.</li>
+          </ol>
+          <a href="https://wa.me/5599999999999?text=Quero%20um%20orçamento%20para%20assistência"
+             target="_blank"
+             class="btn btn-outline">
+            Pedir orçamento agora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>O que os clientes dizem</h2>
+      <p class="section-subtitle">
+        Alguns feedbacks que representam o cuidado da Horizontech Oficial com cada cliente.
+      </p>
+
+      <div class="grid-3">
+        <div class="testimonial-card">
+          <p>
+            “Me ajudaram a escolher o melhor celular pro meu uso e ainda configuraram tudo. Atendimento top!”
+          </p>
+          <span>– Cliente Instagram</span>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            “Troquei a tela do meu smartphone e ficou perfeita. Rápido, preço justo e com garantia.”
+          </p>
+          <span>– Cliente Assistência</span>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            “Comprei kit gamer completo, veio tudo certinho e bem embalado. Recomendo muito!”
+          </p>
+          <span>– Cliente Gamer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO / RODAPÉ -->
+  <footer class="footer" id="contato">
+    <div class="container footer-grid">
+      <div>
+        <h3>Horizontech Oficial</h3>
+        <p>
+          Sua loja de eletrônicos, acessórios e assistência técnica de confiança.
+        </p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-list">
+          <li>📱 WhatsApp: (18) 98139-8190</li>
+          <li>📍 Endereço:Quintino maudonnet, 788, centro, Panorama, Sao Paulo 17980-000</li>
+          <li>🕒 Horário: Seg a Sex – 09h às 18h</li>
+          <li>🕒 Horário: Sáb - 09:00h às 15:00h </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Redes sociais</h4>
+        <ul class="footer-list">
+          <li>
+            <a href="https://www.instagram.com/horizontechoficial/" target="_blank">
+              Instagram @horizontechoficial
+            </a>
+          </li>
+             <li>
+      <a href="https://www.tiktok.com/@horizontechoficial" target="_blank">
+        TikTok @horizontechoficial
+      </a>
+    </li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Horizontech Oficial – Todos os direitos reservados.</p>
+      <p>Desenvolvido por HL Solutions 360</p>
+    </div>
+  </footer>
+
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5518981760379?text=Olá%20vim%20pelo%20site%20Horizontech%20Oficial"
+     target="_blank"
+     class="whats-float">
+    💬
+  </a>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="btn-top" class="btn-top">↑</button>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
