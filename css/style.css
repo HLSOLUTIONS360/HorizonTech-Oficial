@@ -11,28 +11,39 @@ html {
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, #1e293b 0, #020617 45%, #000 100%);
-  color: #e5e7eb;
+  background: radial-gradient(circle at top, #050608 0, #020203 50%, #000000 100%);
+  color: var(--text-main);
   line-height: 1.6;
 }
 
+
+
+
 /* ====== VARIÁVEIS ====== */
+
 :root {
-  --bg-main: #001A2C;           /* fundo escuro moderno */
-  --bg-card: #003A63;           /* fundo dos cards */
-  --bg-card-alt: #002845;       /* variação mais escura para contraste */
-  
-  --accent: #1EC8FF;            /* azul claro neon (destaque principal) */
-  --accent-strong: #5FDBFF;     /* variação mais forte */
-  --accent-2: #005C99;          /* azul médio da logo */
+  /* Fundo */
+  --bg-main: #0a0a0a;          /* preto suave (não puro) para melhor contraste */
+  --bg-card: #111111;          /* cinza carvão */
+  --bg-card-alt: #181818;      /* fundo para seções */
 
-  --text-main: #FFFFFF;
-  --text-muted: #E5E7EB;
+  /* Laranja vibrante estilo Horizon */
+  --accent: #ff7b00;           /* laranja principal mais vivo */
+  --accent-strong: #ff9d2b;    /* laranja neon */
+  --accent-2: #ffb85a;         /* laranja dourado */
 
-  --border-soft: rgba(255, 255, 255, 0.15);
-  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
+  /* Texto */
+  --text-main: #ffffff;
+  --text-muted: #cfcfcf;
+
+  /* Bordas e sombras */
+  --border-soft: rgba(255, 123, 0, 0.45);
+  --shadow-soft: 0 18px 40px rgba(255, 123, 0, 0.25);
+
   --radius-lg: 20px;
 }
+
+
 
 /* ====== CONTAINERS ====== */
 .container {
@@ -162,17 +173,18 @@ body {
   text-decoration: none;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #0b1120;
-  box-shadow: 0 12px 26px rgba(6, 182, 212, 0.4);
+  background: linear-gradient(135deg, #ff7a1a, #ff9a3a);
+  color: #0b0d10;
+  box-shadow: 0 12px 26px rgba(255, 122, 26, 0.4);
 }
+
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 38px rgba(6, 182, 212, 0.55);
+  box-shadow: 0 18px 38px rgba(255, 122, 26, 0.6);
 }
+
 
 .btn-outline {
   background: transparent;
@@ -219,10 +231,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.hero-card p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 0.75rem;
+.hero-card {
+  border-radius: var(--radius-lg);
+  background: radial-gradient(circle at top left, rgba(255, 122, 26, 0.18), #050608);
+  
 }
 
 .hero-card .price {
@@ -231,7 +243,7 @@ body {
 }
 
 .hero-card.secondary {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(15, 23, 42, 0.95));
+  background: linear-gradient(135deg, rgba(255, 155, 70, 0.16), #050608);
 }
 
 /* ====== SEÇÕES GERAIS ====== */
@@ -523,8 +535,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: #ecfdf5;
+  background: linear-gradient(135deg, #ff7a1a, #ff9a3a);
+  color: #0b0d10;
   font-size: 1.5rem;
   text-decoration: none;
   box-shadow: 0 18px 40px rgba(22, 163, 74, 0.6);
